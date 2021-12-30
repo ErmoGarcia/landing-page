@@ -1,7 +1,8 @@
 :root {
     --main-bg-color: #222222;
     --main-text-color: #a8ccc9;
-    --secondary-bg-color: #F9B5AC;
+    --secondary-bg-color: #333333;
+    --error-color: #EF767A
 }
   
 body {
@@ -70,6 +71,15 @@ input, textarea {
     border-radius: 3px;
 
     background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    border: none;
+    border-bottom: 2px solid var(--main-text-color);
+}
+
+input:invalid, textarea:invalid {
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid var(--error-color);
 }
 
 textarea {
