@@ -2,14 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Guillermo García Grao - Landing Page</title>
+        <title>Guillermo García Grao</title>
 
         <meta name="author" content="Guillermo García Grao">
         <meta name="description" content="Landing page for the engineer/developer Guillermo García Grao.">
+
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <h1>Guillermo García Grao</h1>
-        <img src="https://via.placeholder.com/200" alt="Picture of Guillermo García Grao">
+
+        <div class="avatar">
+            <img src="https://via.placeholder.com/200" alt="Picture of Guillermo García Grao">
+        </div>
 
         <section>
             <h2>Education</h2>
@@ -26,12 +31,26 @@
             <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
         </section>
 
-        <section>
+        <section class="contact">
             <h2>Contact</h2>
-            <form action="/action_page.php">
-                <label for="contact-message">Contact form:</label>
-                <input id="contact-message" type="text"  placeholder="Write your message here">
-                <button type="submit">Submit</button>
+            <form class="contact-form">
+                <ul>
+                    <li class="contact-form-item half margin-right">
+                        <label for="contact-name"></label>
+                        <input id="contact-name" type="text"  placeholder="Name">
+                    </li>
+                    <li class="contact-form-item half">
+                        <label for="contact-email"></label>
+                        <input id="contact-email" type="text"  placeholder="Email" required>
+                    </li>
+                    <li class="contact-form-item">
+                        <label for="contact-message"></label>
+                        <textarea id="contact-message" placeholder="Write your message here" required></textarea>
+                    </li>
+                    <li class="contact-form-item">
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
             </form>
         </section>
     </body>

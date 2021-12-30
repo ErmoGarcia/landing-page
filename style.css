@@ -1,0 +1,81 @@
+:root {
+    --main-bg-color: #222222;
+    --main-text-color: #a8ccc9;
+    --secondary-bg-color: #F9B5AC;
+}
+  
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 1em;
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p {
+    max-width: 70ch;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form ul {
+    max-width: 70ch;
+    margin: auto;
+}
+
+.contact-form-item {
+    /* max-width: 70ch; */
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+.half {
+    width: calc(50% - .5em);
+    min-width: 20rem;
+}
+
+.margin-right {
+    margin-right: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em .5em;
+
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+textarea {
+    height: 6rem;
+}
+  
+button {
+    float: right;
+}
