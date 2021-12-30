@@ -6,6 +6,7 @@
 }
   
 body {
+    margin: 0;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: sans-serif;
@@ -15,6 +16,33 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+header {
+    height: 4rem;
+    background-color: var(--secondary-bg-color);
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: calc(50% - 1em);
+    width: 100%;
+}
+
+.navbar-item {
+    float: right;
+
+    margin: .5em 1em;
+}
+
+.logo {
+    float: left;
 }
 
 h1 {
