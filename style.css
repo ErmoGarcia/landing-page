@@ -23,26 +23,21 @@ a {
     text-decoration: none;
 }
 
-header {
-    height: 4rem;
-    background-color: var(--secondary-bg-color);
-    position: relative;
-}
-
 nav {
-    position: absolute;
-    top: calc(50% - 1em);
+    /* height: 4rem; */
+    padding: 1.5em;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
     width: 100%;
+    display: inline;
 }
 
-.navbar-item {
+nav li{
     float: right;
-
-    margin: .5em 1em;
-}
-
-.logo {
-    float: left;
+    margin: 0 1em;
 }
 
 h1 {
