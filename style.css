@@ -12,6 +12,12 @@ body {
     font-family: sans-serif;
 }
 
+/*
+##########
+# Resets #
+##########
+*/
+
 ul {
     list-style: none;
     padding: 0;
@@ -23,8 +29,49 @@ a {
     text-decoration: none;
 }
 
+/*
+###########
+# Heading #
+###########
+*/
+
+h1 {
+    padding: 1em;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+##########
+# Layout #
+##########
+*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+section p {
+    padding: 1rem;
+    max-width: 70ch;
+    margin-bottom: 10rem;
+}
+
+/*
+##########
+# Navbar #
+##########
+*/
+
 nav {
-    /* height: 4rem; */
     padding: 1.5em;
     background-color: var(--secondary-bg-color);
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -40,29 +87,11 @@ nav li{
     margin: 0 1em;
 }
 
-h1 {
-    padding: 1em;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-.avatar {
-    display: flex;
-    justify-content: center;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-}
-
-section p {
-    padding: 1rem;
-    max-width: 70ch;
-    margin-bottom: 10rem;
-}
+/*
+################
+# Contact form #
+################
+*/
 
 .contact-form {
     padding: 3rem;
@@ -121,6 +150,11 @@ button {
     border: 2px solid var(--main-text-color);
 }
 
+/*
+######################################
+# Curve decorations for each section #
+######################################
+*/
 
 #about::before {
     width: 100%;
@@ -176,10 +210,15 @@ button {
     background-size: cover;
 }
 
+/*
+##################
+# Wave animation #
+##################
+*/
 
 .wave {
     animation: wave-animation 1.5s;
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    transform-origin: 70% 70%;
     display: inline-block;
   }
 
