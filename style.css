@@ -59,11 +59,11 @@ section {
     gap: 5rem;
 }
 
-section p {
+/* section p {
     padding: 1rem;
     max-width: 70ch;
     margin-bottom: 10rem;
-}
+} */
 
 /*
 ##########
@@ -208,6 +208,50 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/*
+#################
+# Projects list #
+#################
+*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-item {
+    width: 15rem;
+    padding: 1em;
+    position: relative;
+    border: 2px solid var(--main-text-color);
+    background-color: var(--secondary-bg-color);
+    transition: all .5s;
+}
+
+.projects-item:hover {
+    transform: scale(0.8);
+    transition: all .5s;
+}
+
+.projects-item a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+.projects-item img {
+    width: 100%;
+    max-height: 10rem;
+}
+
+.projects-item p {
+    font-size: 1.2rem;
 }
 
 /*
