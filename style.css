@@ -75,11 +75,14 @@ nav {
     padding: 1.5em;
     background-color: var(--secondary-bg-color);
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
-    width: 100%;
-    display: inline;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav li{
@@ -231,7 +234,7 @@ button {
     transition: all .5s;
 }
 
-.projects-item:hover {
+.projects-item:hover, .projects-item:focus-within {
     transform: scale(0.8);
     transition: all .5s;
 }
