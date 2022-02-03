@@ -220,13 +220,15 @@ button {
 */
 
 .projects {
+    padding: 5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .projects-item {
-    width: 15rem;
+    flex: 0 1 100%;
+    max-width: 15rem;
     padding: 1em;
     position: relative;
     border: 2px solid var(--main-text-color);
