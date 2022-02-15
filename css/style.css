@@ -163,7 +163,7 @@ button {
     width: 100%;
     padding-bottom: calc(100% * 200 / 900);
     content: ''; 
-    background-image: url(./assets/about-waves.svg);
+    background-image: url(../assets/about-waves.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,7 +178,7 @@ button {
     width: 100%;
     padding-bottom: calc(100% * 200 / 900);
     content: ''; 
-    background-image: url(./assets/portfolio-waves.svg);
+    background-image: url(../assets/portfolio-waves.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -190,7 +190,7 @@ button {
     padding: 0;
     padding-bottom: calc(100% * 200 / 900);
     content: ''; 
-    background-image: url(./assets/skills-waves.svg);
+    background-image: url(../assets/skills-waves.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -207,7 +207,7 @@ button {
     padding: 0;
     padding-bottom: calc(100% * 200 / 900);
     content: ''; 
-    background-image: url(./assets/contact-waves.svg);
+    background-image: url(../assets/contact-waves.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
