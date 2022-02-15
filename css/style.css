@@ -220,15 +220,13 @@ button {
 */
 
 .projects {
+    max-width: 90%;
     padding: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
 }
 
 .projects-item {
-    flex: 0 1 100%;
-    max-width: 15rem;
     padding: 1em;
     position: relative;
     border: 2px solid var(--main-text-color);
