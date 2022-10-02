@@ -5,7 +5,7 @@ networks:
     external: true
 
 services:
-  webpina:
+  landing-page:
     build: .
     labels:
       - traefik.http.routers.webpina.rule=Host(`ermo.space`)
