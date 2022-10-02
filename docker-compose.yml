@@ -8,8 +8,8 @@ services:
   landing-page:
     build: .
     labels:
-      - traefik.http.routers.webpina.rule=Host(`ermo.space`)
-      - traefik.http.routers.webpina.tls=true
-      - traefik.http.routers.webpina.tls.certresolver=lets-encrypt
+      - traefik.http.routers.home.rule=Host(`ermo.space`)
+      - traefik.http.routers.home.tls=true
+      - traefik.http.routers.home.tls.certresolver=lets-encrypt
     networks:
       - web
