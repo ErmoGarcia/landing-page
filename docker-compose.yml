@@ -6,7 +6,7 @@ networks:
 
 services:
   landing-page:
-    build: .
+    image: ggarciag/landing-page:latest
     labels:
       - traefik.http.routers.home.rule=Host(`ermo.space`)
       - traefik.http.routers.home.tls=true
