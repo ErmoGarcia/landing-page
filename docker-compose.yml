@@ -1,0 +1,15 @@
+version: "3"
+
+networks:
+  web:
+    external: true
+
+services:
+  webpina:
+    build: .
+    labels:
+      - traefik.http.routers.webpina.rule=Host(`ermo.space`)
+      - traefik.http.routers.webpina.tls=true
+      - traefik.http.routers.webpina.tls.certresolver=lets-encrypt
+    networks:
+      - web
